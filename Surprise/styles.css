@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(135deg, #800020, #800020);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #00000055;
+}
+
+p {
+    font-size: 1.5em;
+    max-width: 600px;
+}
+
+.foto {
+  margin: 20px 0;
+  max-width: 150px; /* largura máxima */
+  height: auto;     /* mantém proporção */
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+.heart {
+  font-size: 3em;
+  animation: pulsar 1s infinite;
+  text-decoration: none; /* remove o sublinhado */
+  color: inherit;        /* mantém a cor original */
+  cursor: pointer;       /* mostra a mãozinha ao passar */
+}
+
+@keyframes pulsar {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+}
